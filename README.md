@@ -4,7 +4,7 @@
 2. Скопировать директорию себе локльно git clone https://github.com/TimofeiSmirnov/LWU.git и зайти в неё
 3. Создать venv (дириктория для запуска пинота + менеджер библиотек проекта) python3 -m venv venv и активировать его source venv/bin/activate
 4. Установть все зависимоти pip install -r requirements.txt
-5. Запустить app.py python3 app.py
+5. Написать в консоли следующие команды, указанные через запятую: export FLASK_APP=app, export FLASK_ENV=development, flask run
 
 
 [ Как добавть зависимость? ]
