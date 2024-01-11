@@ -1,0 +1,22 @@
+{% extends 'base-index.html' %}
+
+{% block title %}
+    LWU
+{% endblock %}
+
+{% block navbar %}
+    <div class="navbar">
+            <a href="{{ url_for('main.index') }}"><img src="static/images/lwu_logo.png" class="logo"></a>
+            <nav>
+                <ul>
+                    <li><p>+7 (919) 990-32-81</p></li>
+                    <li>
+                        <form action="{{ url_for('main.login') }}">
+                            <button class="navbar-button">Записаться</button>
+                        </form>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+{% endblock %}
+

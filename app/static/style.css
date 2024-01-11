@@ -1,0 +1,1178 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 100%;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.secondnavbar {
+    margin-left: 8%;
+    margin-right: 8%;
+    display: flex;
+    align-items: center;
+}
+
+.secondnavbar nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 129px;
+    padding-left: 40px;
+    cursor: pointer;
+}
+
+.user-logo {
+    width: 58px;
+    cursor: pointer;
+    margin-right: 4.7rem;
+}
+
+nav {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    flex: 1;
+    text-align: right;
+}
+
+.secondnavbar nav {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    flex: 1;
+    text-align: center;
+}
+
+.subjectsnav {
+    margin-top: 15px;
+    margin-bottom: 100px;
+    flex: 1;
+    text-align: center;
+}
+
+.subjectsnav nav {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    flex: 1;
+    text-align: center;
+}
+
+.subjectsnav nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+nav ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    font-width: bold;
+}
+
+nav ul li a:hover {
+    color: #007652;
+    font-width: bold;
+}
+
+.username {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 100px;
+}
+
+.navbartop {
+    font-size: 18px;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+.navbartop:hover {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 50px;
+    cursor: pointer;
+}
+
+nav ul li p {
+    font-weight: bold;
+    font-size: 16px;
+    padding-left: 30px;
+    letter-spacing: 1px;
+}
+
+.navbar-button{
+    width: 216px;
+    height: 55px;
+    background-color: #ffffff;
+    color: black;
+    border-color: black;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 30px;
+    margin-right: 50px;
+    border-width: 1px;
+}
+
+.navbar-button:hover {
+    width: 216px;
+    height: 55px;
+    background-color: #ffffff;
+    color: black;
+    border-color: black;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 30px;
+    margin-right: 50px;
+    border-width: 2px;
+    font-weight: bold;
+}
+
+.mock-button {
+    width: 216px;
+    height: 55px;
+    background-color: #ffffff;
+    color: black;
+    border-color: black;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-right: 50px;
+    border-width: 1px;
+    margin-top: 40px;
+}
+
+.mock-button:hover {
+    width: 216px;
+    height: 55px;
+    background-color: #ffffff;
+    color: black;
+    border-color: black;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 50px;
+    border-width: 3px;
+    margin-top: 40px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.col-1-1 {
+    flex-basis: 50%;
+    position: relative;
+    margin-left: 50px;
+}
+
+.col-1-1 h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.col-1-1 p {
+    font-size: 18px;
+    letter-spacing: 3px;
+    line-height: 2;
+    margin-top: 37px;
+    font-weight: 100;
+}
+
+.col-1-1 button {
+    width: 248px;
+    height: 80px;
+    background-color: #ffffff;
+    letter-spacing: 3px;
+    color: black;
+    border-color: black;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 20px;
+    border-width: 1px;
+    margin-top: 55px;
+    font-weight: 100;
+}
+
+.col-1-1 button:hover {
+    width: 248px;
+    height: 80px;
+    background-color: #ffffff;
+    letter-spacing: 3px;
+    color: black;
+    border-color: black;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 20px;
+    border-width: 2px;
+    font-weight: bold;
+    margin-top: 55px;
+}
+
+.col-1-2 {
+    position: relative;
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.exam1 {
+    width: 80%;
+    margin-left: 15%;
+}
+
+.exam2 {
+    width: 80%;
+    margin-left: 15%;
+}
+
+.col-2-1 {
+    flex-basis: 50%;
+    position: relative;
+    margin-right: 50px;
+    margin-left: 40px;
+}
+
+.col-2-1 h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.col-2-1 p {
+    font-size: 18px;
+    letter-spacing: 3px;
+    line-height: 2;
+    margin-top: 37px;
+    font-weight: 100;
+}
+
+.col-2-2 {
+    position: relative;
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.subject-button {
+    width: 223px;
+    height: 59px;
+    background-color: #00A875;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 50px;
+    border: none;
+}
+
+.subject-button:hover {
+    width: 223px;
+    height: 59px;
+    background-color: #00A875;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 50px;
+}
+
+.no-subject-button {
+    width: 223px;
+    height: 59px;
+    background-color: #ECECEC;
+    color: black;
+    border-color: black;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-width: 1px;
+    border-radius: 50px;
+}
+
+.no-subject-button:hover {
+    width: 223px;
+    height: 59px;
+    background-color: #ECECEC;
+    color: black;
+    border-color: black;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-width: 1px;
+    border-radius: 50px;
+}
+
+.center-text{
+    margin-top: 15px;
+    margin-bottom: 50px;
+    flex: 1;
+    text-align: center;
+}
+
+.center-text h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.scrolling-wrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  margin-bottom: 100px;
+
+  .card {
+    display: inline-block;
+    width: 492px;
+    height: 363px;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+    margin: 30px;
+  }
+
+  .card h2 {
+    font-size: 28px;
+    margin-top: 39px;
+    margin-left: 34px;
+  }
+
+  .comment-text {
+    white-space: normal;
+    width: 400px;
+    height: 200px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    max-height: 450px;
+    margin-top: 37px;
+    margin-left: 34px;
+    margin-right: 34px;
+    font-size: 18px;
+    letter-spacing: 3px;
+    line-height: 2;
+    font-weight: 100;
+  }
+}
+
+.scrolling-wrapper::-webkit-scrollbar {
+  width: 0;
+}
+
+.center-text-sign {
+    margin-top: 100px;
+    flex: 1;
+    text-align: center;
+}
+
+.center-text-sign h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.sign-button {
+    width: 216px;
+    height: 55px;
+    background-color: #21671E;
+    letter-spacing: 3px;
+    color: white;
+    border-color: black;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-width: 1px;
+    margin-top: 55px;
+    font-weight: 100;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sign-button:hover {
+    width: 216px;
+    height: 55px;
+    background-color: #ffffff;
+    letter-spacing: 3px;
+    color: black;
+    border-color: black;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-width: 2px;
+    font-weight: bold;
+    margin-top: 55px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.field {
+    margin-top: 34px;
+    max-width: 370px;
+    height: 62px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+    padding-left: 30px;
+    border: 2px solid black;
+}
+
+.sign-form {
+    transition: filter 0.1s ease 0s;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.error {
+    max-width: 370px;
+    height: 62px;
+    width: 70%;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 18px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.error p {
+    margin-top: 20px;
+}
+
+.user-data {
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: 0;
+    line-height: 2.5;
+}
+
+.user-data-big {
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 0;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    align-items: center;
+    display: flex;
+}
+
+.row-mocks:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.mock-text {
+    width: 440px;
+    padding: 8%;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.mock-text h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.mock-text p {
+    font-size: 18px;
+    letter-spacing: 3px;
+    line-height: 2;
+    margin-top: 18px;
+    font-weight: 100;
+}
+
+@media only screen and (max-width: 1250px) {
+    .mock-text {
+        width: 320px;
+        padding: 8%;
+        border: 1px solid black;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width: 1140px) {
+
+    .mock-text {
+        width: 320px;
+        padding: 8%;
+        border: 1px solid black;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+    }
+
+    .navbartop {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+
+    .subject-button {
+        width: 190px;
+        height: 48px;
+        background-color: #00A875;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 18px;
+        margin-left: 15px;
+        margin-right: 15px;
+        border-radius: 50px;
+        border: none;
+    }
+
+    .subject-button:hover {
+        width: 190px;
+        height: 48px;
+        background-color: #00A875;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: bold;
+        margin-left: 15px;
+        margin-right: 15px;
+        border-radius: 50px;
+    }
+
+    .no-subject-button {
+        width: 190px;
+        height: 48px;
+        background-color: #ECECEC;
+        color: black;
+        border-color: black;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 18px;
+        margin-left: 15px;
+        margin-right: 15px;
+        border-width: 1px;
+        border-radius: 50px;
+    }
+
+    .no-subject-button:hover {
+        width: 190px;
+        height: 48px;
+        background-color: #ECECEC;
+        color: black;
+        border-color: black;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: bold;
+        margin-left: 15px;
+        margin-right: 15px;
+        border-width: 1px;
+        border-radius: 50px;
+    }
+
+    .mock-text {
+        width: 250px;
+        padding: 8%;
+        border: 1px solid black;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+    }
+
+    .mock-text h2 {
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .mock-text p {
+        font-size: 16px;
+        letter-spacing: 3px;
+        line-height: 2;
+        margin-top: 18px;
+        font-weight: 100;
+    }
+
+    .navbartop {
+        display: none;
+    }
+
+    .secondnavbar nav ul li a {
+        list-style: none;
+        display: none;
+        margin-top: 30px;
+        text-align: center;
+        float: none;
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+
+    .exam1 {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .exam2 {
+        width: 100%;
+    }
+
+    .scrolling-wrapper {
+      overflow-x: scroll;
+      overflow-y: hidden;
+      white-space: nowrap;
+      margin-bottom: 100px;
+
+      .card {
+        display: inline-block;
+        width: 350px;
+        height: 270px;
+        border-color: black;
+        border-width: 1px;
+        border-style: solid;
+        margin: 30px;
+      }
+
+      .card h2 {
+        font-size: 24px;
+        margin-top: 39px;
+        margin-left: 34px;
+      }
+
+      .comment-text {
+        white-space: normal;
+        width: 250px;
+        height: 150px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        max-height: 450px;
+        margin-top: 37px;
+        margin-left: 34px;
+        margin-right: 34px;
+        font-size: 16px;
+        letter-spacing: 3px;
+        line-height: 2;
+        font-weight: 100;
+      }
+    }
+
+}
+
+@media only screen and (max-width: 780px) {
+
+    .mock-button {
+        width: 180px;
+        height: 45px;
+        background-color: #ffffff;
+        color: black;
+        border-color: black;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 16px;
+        margin-right: auto;
+        margin-left: auto;
+        border-width: 1px;
+        margin-top: 40px;
+    }
+
+    .mock-button:hover {
+        width: 180px;
+        height: 45px;
+        background-color: #ffffff;
+        color: black;
+        border: 3px solid black;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: bold;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 40px;
+    }
+
+    .mock-text {
+        width: 200px;
+        padding: 8%;
+        border: 1px solid black;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .mock-text h2 {
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .mock-text p {
+        font-size: 16px;
+        letter-spacing: 3px;
+        line-height: 2;
+        margin-top: 18px;
+        font-weight: 100;
+    }
+
+    .user-data {
+        text-align: center;
+    }
+
+    .username {
+        display: none;
+    }
+
+    .user-data-big {
+        font-size: 32px;
+        font-weight: bold;
+        letter-spacing: 0;
+        text-align: center;
+    }
+
+    .navbartop {
+        display: none;
+    }
+
+    .secondnavbar nav ul li a {
+        list-style: none;
+        display: none;
+        margin-top: 30px;
+        text-align: center;
+        float: none;
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+
+    .container .navbar nav ul li p {
+        display: none;
+    }
+
+    .row {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 20px;
+        margin-bottom: 40px;
+    }
+
+    .col-1-2 {
+        position: relative;
+        display: none;
+        align-items: center;
+    }
+
+    .col-1-1 {
+        position: relative;
+    }
+
+    .col-2-2 {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+    .col-2-1 {
+        position: relative;
+        margin-top: 50px;
+        align-items: center;
+    }
+
+    .exam2 {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .scrolling-wrapper {
+      overflow-x: scroll;
+      overflow-y: hidden;
+      white-space: nowrap;
+      margin-bottom: 100px;
+
+      .card {
+        display: inline-block;
+        width: 300px;
+        height: 250px;
+        border-color: black;
+        border-width: 1px;
+        border-style: solid;
+        margin: 30px;
+      }
+
+      .card h2 {
+        font-size: 22px;
+        margin-top: 39px;
+        margin-left: 34px;
+      }
+
+      .comment-text {
+        white-space: normal;
+        width: 250px;
+        height: 100px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        max-height: 450px;
+        margin-top: 37px;
+        margin-left: 34px;
+        margin-right: 34px;
+        font-size: 16px;
+        letter-spacing: 3px;
+        line-height: 2;
+        font-weight: 100;
+      }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .column {
+        width: 100%;
+    }
+
+    .mock-text {
+        width: 200px;
+        padding: 8%;
+        border: 1px solid black;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .mock-text h2 {
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .mock-text p {
+        font-size: 12px;
+        letter-spacing: 3px;
+        line-height: 2;
+        margin-top: 18px;
+        font-weight: 100;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+
+    .user-data-big {
+        margin-top: 100px;
+        font-size: 32px;
+        font-weight: bold;
+        letter-spacing: 0;
+        text-align: center;
+    }
+
+    .navbartop {
+        display: none;
+    }
+
+    .secondnavbar nav ul li a {
+        list-style: none;
+        display: none;
+        margin-top: 30px;
+        text-align: center;
+        float: none;
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+
+    .container .navbar nav ul li p {
+        display: none;
+    }
+
+    .row {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 20px;
+        margin-bottom: 40px;
+        margin-top: 50px;
+    }
+
+    .col-1-2 {
+        position: relative;
+        display: none;
+        align-items: center;
+    }
+
+    .col-1-1 {
+        position: relative;
+        text-align: center;
+        margin: 0;
+    }
+
+    .col-2-2 {
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+    .col-2-1 {
+        position: relative;
+        margin-top: 50px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .col-2-1 {
+        align-items: center;
+        text-align: center;
+        position: relative;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+
+    .exam2 {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .navbar-button{
+        display: none;
+        width: 216px;
+        height: 55px;
+        background-color: #ffffff;
+        color: black;
+        border-color: black;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 18px;
+        margin-left: 30px;
+        margin-right: 50px;
+        border-width: 1px;
+    }
+
+    .navbar-button:hover {
+        display: none;
+        width: 216px;
+        height: 55px;
+        background-color: #ffffff;
+        color: black;
+        border-color: black;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 18px;
+        margin-left: 30px;
+        margin-right: 50px;
+        border-width: 2px;
+        font-weight: bold;
+    }
+
+    .logo {
+        width: 100px;
+        position: absolute;
+        margin-top: 40px;
+        margin-left: 10vh;
+        cursor: pointer;
+    }
+
+    .col-1-1 p {
+        font-size: 14px;
+        letter-spacing: 3px;
+        line-height: 2;
+        margin-top: 37px;
+        font-weight: 100;
+    }
+
+    .col-2-1 p {
+        font-size: 14px;
+        letter-spacing: 3px;
+        line-height: 2;
+        margin-top: 37px;
+        font-weight: 100;
+    }
+
+    .col-1-1 button {
+        width: 200px;
+        height: 70px;
+        background-color: #ffffff;
+        letter-spacing: 3px;
+        color: black;
+        border-color: black;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 16px;
+        border-width: 1px;
+        margin-top: 55px;
+        font-weight: 100;
+    }
+
+    .col-1-1 button:hover {
+        width: 248px;
+        height: 80px;
+        background-color: #ffffff;
+        letter-spacing: 3px;
+        color: black;
+        border-color: black;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 20px;
+        border-width: 2px;
+        font-weight: bold;
+        margin-top: 55px;
+    }
+
+    .subject-button {
+        width: 200px;
+        height: 50px;
+        background-color: #00A875;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 18px;
+        margin-left: 20px;
+        margin-right: 20px;
+        border-radius: 50px;
+        border: none;
+    }
+
+    .subject-button:hover {
+        width: 200px;
+        height: 50px;
+        background-color: #00A875;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: bold;
+        margin-left: 20px;
+        margin-right: 20px;
+        border-radius: 50px;
+    }
+
+    .no-subject-button {
+        width: 200px;
+        height: 50px;
+        background-color: #ECECEC;
+        color: black;
+        border-color: black;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 18px;
+        margin-left: 20px;
+        margin-right: 20px;
+        border-width: 1px;
+        border-radius: 50px;
+    }
+
+    .no-subject-button:hover {
+        width: 200px;
+        height: 50px;
+        background-color: #ECECEC;
+        color: black;
+        border-color: black;
+        text-align: center;
+        text-decoration: none;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: bold;
+        margin-left: 20px;
+        margin-right: 20px;
+        border-width: 1px;
+        border-radius: 50px;
+    }
+
+    .scrolling-wrapper {
+      overflow-x: scroll;
+      overflow-y: hidden;
+      white-space: nowrap;
+      margin-bottom: 100px;
+
+      .card {
+        display: inline-block;
+        width: 250px;
+        height: 250px;
+        border-color: black;
+        border-width: 1px;
+        border-style: solid;
+        margin: 10px;
+      }
+
+      .card h2 {
+        font-size: 18px;
+        margin-top: 20px;
+        margin-left: 34px;
+      }
+
+      .comment-text {
+        white-space: normal;
+        width: 200px;
+        height: 150px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        max-height: 450px;
+        margin-top: 37px;
+        margin-left: 34px;
+        margin-right: 34px;
+        font-size: 11px;
+        letter-spacing: 3px;
+        line-height: 2;
+        font-weight: 100;
+      }
+    }
+
+}

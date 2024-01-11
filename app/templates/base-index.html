@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width-device-width, initial-scale=1.0" charset="UTF-8">
+    <title>{% block title %} {% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="container">
+        {% block navbar %} {% endblock %}
+    </div>
+
+    <div class="container">
+        <div class="secondnavbar">
+            <nav>
+                <ul>
+                    <li><a href="#part1">Что такое пробник</a></li>
+                    <li><a href="#part2">Зачем</a></li>
+                    <li><a href="#part3">Процесс проведения</a></li>
+                    <li><a href="#part4">Предметы</a></li>
+                    <li><a href="#part5">Отзывы</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="row" id="part1">
+            <div class="col-1-1">
+                <h2>Пробный ЕГЭ</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi ut aliquip ex ea commodo consequat.</p>
+                <form action="{{ url_for('main.login') }}">
+                    <button>ЗАПИСАТЬСЯ</button>
+                </form>
+            </div>
+            <div class="col-1-2">
+                <img src="static/images/exam1.png" class="exam1">
+            </div>
+        </div>
+
+        <div class="row" id="part2">
+            <div class="col-2-2">
+                <img src="static/images/exam2.png" class="exam2">
+            </div>
+            <div class="col-2-1">
+                <h2>Зачем нужен пробный ЕГЭ?</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                    nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-1-1" id="part3">
+                <h2>Процесс проведения</h2>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <div class="col-1-2">
+                <img src="static/images/exam3.png" class="exam1">
+            </div>
+        </div>
+
+        <div class="center-text" id="part4">
+            <h2>Предметы</h2>
+        </div>
+
+        <div class="subjectsnav">
+            <nav>
+                <ul>
+                    <li>
+                        <form action="{{ url_for('main.mocks') }}">
+                            <button href="" class="subject-button">Математика</button>
+                        </form>
+                    </li>
+                    <li>
+                        <form action="{{ url_for('main.mocks') }}">
+                            <button href="" class="subject-button">Русский язык</button>
+                        </form>
+                    </li>
+                    <li><button href="" class="no-subject-button">Информатика</button></li>
+                    <li><button href="" class="no-subject-button">Английский язык</button></li>
+                    <li><button href="" class="no-subject-button">Биология</button></li>
+                    <li><button href="" class="no-subject-button">История</button></li>
+                    <li><button href="" class="no-subject-button">Литература</button></li>
+                    <li><button href="" class="no-subject-button">Физика</button></li>
+                    <li><button href="" class="no-subject-button">Химия</button></li>
+                    <li><button href="" class="no-subject-button">Обществознание</button></li>
+                    <li><button href="" class="no-subject-button">География</button></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="center-text" id="part5">
+            <h2>Отзывы</h2>
+        </div>
+
+        <div class="scrolling-wrapper">
+            <div class="card">
+                <h2>Смирнов Тимофей</h2>
+                <div class="comment-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+            <div class="card">
+                <h2>Саша Мячков</h2>
+                <div class="comment-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat.
+                </div>
+            </div>
+            <div class="card">
+                <h2>Артем Мошенко</h2>
+                <div class="comment-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </div>
+            </div>
+            <div class="card">
+                <h2>Аня Еринова</h2>
+                <div class="comment-text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+{% extends 'base-logged.html' %}
+
+{% block title %}
+    Мои данные
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="navbar">
+            <img src="static/images/lwu_logo.png" class="logo">
+            <nav>
+                <ul>
+                    <li><a class="navbartop" href="{{ url_for('main.index') }}"> Главная</a></li>
+                    <li><a class="navbartop"> Статистика</a></li>
+                </ul>
+            </nav>
+            <a href="{{ url_for('main.info') }}"><img src="static/images/user.png" class="user-logo"></a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="center-text">
+            <h2>Предметы</h2>
+        </div>
+
+        <div class="subjectsnav">
+            <nav>
+                <ul>
+                    <li><button href="" class="subject-button">Математика</button></li>
+                    <li><button href="" class="subject-button">Русский язык</button></li>
+                    <li><button href="" class="no-subject-button">Информатика</button></li>
+                    <li><button href="" class="no-subject-button">Английский язык</button></li>
+                    <li><button href="" class="no-subject-button">Биология</button></li>
+                    <li><button href="" class="no-subject-button">История</button></li>
+                    <li><button href="" class="no-subject-button">Литература</button></li>
+                    <li><button href="" class="no-subject-button">Физика</button></li>
+                    <li><button href="" class="no-subject-button">Химия</button></li>
+                    <li><button href="" class="no-subject-button">Обществознание</button></li>
+                    <li><button href="" class="no-subject-button">География</button></li>
+                </ul>
+            </nav>
+        </div>
+
+        {% if no_mocks %}
+
+            no mocks
+
+        {% else %}
+
+            <div class="center-text">
+                <h2>Все пробники</h2>
+            </div>
+
+            <div class="row-mocks">
+
+                {% for mock in mocks %}
+
+                    <div class="column">
+                        <div class="mock-text">
+                            <h2>{{ mock.subject_id }}</h2>
+                            <p>Дата: {{ mock.date }}</p>
+                            <p>Адрес: {{ mock.place }}</p>
+
+                            <form action="{{ url_for('main.login') }}">
+                                <button class="mock-button">Записаться</button>
+                            </form>
+
+                        </div>
+                    </div>
+
+                {% endfor %}
+
+            </div>
+
+        {% endif %}
+
+    </div>
+
+{% endblock %}

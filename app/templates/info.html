@@ -1,0 +1,45 @@
+{% extends 'base-logged.html' %}
+
+{% block title %}
+    Мои данные
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="navbar">
+            <img src="static/images/lwu_logo.png" class="logo">
+            <nav>
+                <ul>
+                    <li><a class="navbartop" href="{{ url_for('main.index') }}"> Главная</a></li>
+                    <li><a class="navbartop"> Статистика</a></li>
+                    <li><a class="navbartop" href="{{ url_for('main.mocks') }}"> Пробники</a></li>
+                </ul>
+            </nav>
+            <img src="static/images/user.png" class="user-logo">
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row" id="part1">
+            <div class="col-1-1">
+                <h3 class="user-data-big">Ваши данные:</h3>
+                <h3 class="user-data" style="margin-top: 30px;"> Имя: {{ user[0] }}</h3>
+                <h3 class="user-data"> Фамилия: {{ user[1] }}</h3>
+                <h3 class="user-data"> Логин: {{ user[2] }}</h3>
+
+                <form action="{{ url_for('main.login') }}">
+                    <button>ИЗМЕНИТЬ</button>
+                </form>
+
+                 <form action="{{ url_for('main.logout') }}">
+                    <button>ВЫЙТИ</button>
+                </form>
+
+            </div>
+            <div class="col-1-2">
+                <img src="static/images/exam1.png" class="exam1">
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

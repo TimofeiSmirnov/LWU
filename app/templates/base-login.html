@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width-device-width, initial-scale=1.0" charset="UTF-8">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <a href="{{ url_for('main.index') }}"><img src="static/images/lwu_logo.png" class="logo"></a>
+
+            <nav>
+                <ul>
+                    <li><p>+7 (919) 990-32-81</p></li>
+                    <li>
+                        {% block button %}
+                            <form action="{{ url_for('main.signup') }}">
+                                <button class="navbar-button">Регистрация</button>
+                            </form>
+                        {% endblock %}
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container">
+        {% block sign %}
+            <div class="center-text-sign">
+                <h2>Вход</h2>
+            </div>
+
+            <form method="post" class="sign-form">
+                <input class="field" placeholder="Логин" name="login" id="login" required>
+                <input class="field" placeholder="Пароль" type="password" name="password" id="password" required>
+                <input class="sign-button" type="submit" value="Войти">
+            </form>
+        {% endblock %}
+    </div>
+
+</body>
+</html>

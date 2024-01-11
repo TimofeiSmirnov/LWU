@@ -1,0 +1,18 @@
+{% extends 'base-index.html' %}
+
+{% block title %}
+    LWU
+{% endblock %}
+
+{% block navbar %}
+    <div class="navbar">
+            <img src="static/images/lwu_logo.png" class="logo">
+            <nav>
+                <ul>
+                    <li><a class="navbartop" href="{{ url_for('main.mocks') }}"> Пробники</a></li>
+                    <li><a class="navbartop"> Статистика</a></li>
+                </ul>
+            </nav>
+            <a href="{{ url_for('main.info') }}"><img src="static/images/user.png" class="user-logo"></a>
+    </div>
+{% endblock %}
